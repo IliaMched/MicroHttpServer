@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>About Page</h1>
-    <p>This page is being served from a real HTML file.</p>
-    <a href="/">Go Home</a>
+    <div class="container">
+        <h1>About This Server</h1>
+        <p>This project uses the Berkeley Socket API in C and manually handles HTTP/1.1 requests and responses.</p>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <div class="card">
+            <h2>HTTP Headers Sent</h2>
+            <ul>
+                <li>Date</li>
+                <li>Server</li>
+                <li>Content-Type</li>
+                <li>Content-Length</li>
+                <li>Last-Modified</li>
+                <li>Connection</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

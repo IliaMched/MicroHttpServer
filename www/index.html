@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Home Page</h1>
-    <p>Welcome to my micro HTTP server.</p>
-    <a href="/about">Go to About</a>
+    <div class="container">
+        <h1>Micro HTTP Server</h1>
+        <p>This website is served by a custom C HTTP/1.1 server built with Berkeley sockets.</p>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <img src="/network.jpg" alt="Network Image" class="hero-image">
+
+        <div class="card">
+            <h2>Features</h2>
+            <ul>
+                <li>Manual HTTP request parsing</li>
+                <li>Manual headers</li>
+                <li>Static file serving</li>
+                <li>Multiple content types</li>
+                <li>Request logging</li>
+                <li>Basic path traversal protection</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

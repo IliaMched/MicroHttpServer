@@ -1,12 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Home Page</h1>
-    <p>Welcome to my micro HTTP server.</p>
-    <a href="/about">Go to About</a>
-</body>
-</html>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    color: #0f4c81;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 14px;
+    text-decoration: none;
+    color: white;
+    background: #1565c0;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #0d47a1;
+}
+
+.card {
+    margin-top: 24px;
+    padding: 20px;
+    background: #f8fafc;
+    border: 1px solid #dbe4ee;
+    border-radius: 12px;
+}
+
+.hero-image {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    display: block;
+}
