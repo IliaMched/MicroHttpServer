@@ -1,5 +1,8 @@
- *.class
-out/
+# C compiled files
+*.o
+server
+
+# general
 .vscode/
 .idea/
 .DS_Store
