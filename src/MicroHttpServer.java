@@ -21,7 +21,8 @@ public class MicroHttpServer {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("\nClient connected: " + clientSocket.getInetAddress());
 
-                handleClient(clientSocket);
+                Thread clientThread = new Thread(() -> handleClient(clientSocket));
+                clientThread.start();
             }
 
         } catch (Exception e) {
@@ -44,6 +45,7 @@ public class MicroHttpServer {
             }
 
             System.out.println("----- REQUEST START -----");
+            System.out.println("Thread: " + Thread.currentThread().getName());
             System.out.println(requestLine);
 
             String line;
@@ -123,4 +125,4 @@ public class MicroHttpServer {
         output.write(bodyBytes);
         output.flush();
     }
-}
+} 
